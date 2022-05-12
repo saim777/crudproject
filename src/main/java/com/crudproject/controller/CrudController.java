@@ -1,5 +1,7 @@
 package com.crudproject.controller;
 
+import com.crudproject.service.CrudSevice;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,10 +9,18 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CrudController {
 
-    @PostMapping("/onboardUser")
-   public void onboardUser(){
+    @Autowired
+    private CrudSevice crudSevice;
 
-        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Hello");
+
+    @PostMapping("/onboardUser")
+   public void onboardUser(@RequestParam String studentName){
+
+        crudSevice.onboardUser(studentName);
+
+
+
+
     }
 
 }
