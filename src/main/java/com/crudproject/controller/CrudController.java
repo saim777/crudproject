@@ -12,15 +12,9 @@ public class CrudController {
     @Autowired
     private CrudSevice crudSevice;
 
-
     @PostMapping("/onboardUser")
-   public void onboardUser(@RequestParam String studentName){
-
-        crudSevice.onboardUser(studentName);
-
-
-
-
+   public void onboardUser(){
+        crudSevice.onboardUser();
     }
 
 }
