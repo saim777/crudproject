@@ -3,6 +3,7 @@ package com.crudproject.model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Data
 @Entity
@@ -15,5 +16,7 @@ public class CrudModel {
     private String lastName;
     private String email;
     private Integer randomNumber;
+    private Integer courseId;
+    private Date registrationDate;
 
 }
