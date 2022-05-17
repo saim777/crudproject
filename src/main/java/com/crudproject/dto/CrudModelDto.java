@@ -12,4 +12,5 @@ public class CrudModelDto {
    private String lastName;
    private String email;
    private Integer courseId;
+
 }

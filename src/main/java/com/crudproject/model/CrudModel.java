@@ -18,5 +18,4 @@ public class CrudModel {
     private Integer randomNumber;
     private Integer courseId;
     private Date registrationDate;
-
 }
